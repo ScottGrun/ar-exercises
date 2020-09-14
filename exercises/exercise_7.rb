@@ -10,3 +10,11 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+puts "Enter Store Name"
+store_name = gets.chomp
+
+
+
+
+burnaby = Store.create!(name: store_name, annual_revenue: nil , mens_apparel:nil,  womens_apparel:nil);
