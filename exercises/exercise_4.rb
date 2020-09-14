@@ -17,4 +17,7 @@ pp @mens_stores
 
 @mens_stores.each{|store| puts store.name}
 
-@stores_less_than_1m = Store.where(mens_apparel:true, womens_apparel:true, "annual_revenue >": 1000000)
+
+@stores_less_than_1m = Store.where("annual_revenue < ?", 1000000)
+
+puts @stores_less_than_1m
